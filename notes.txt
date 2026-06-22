@@ -1,0 +1,179 @@
+DS - DSA 
+                        DS 
+Linear DS                       NoN Linear DS 
+Array                             Tree
+Stack                             Graph 
+Queue
+LinkedList 
+
+*Search
+*Sorting 
+
+
+
+1) time complexity  { time taken by algo ==> number of instructions  - input  }
+2) space complexity { space-memory consumes by programs - input }
+
+
+void main( ){
+
+    int arr[5]; //25 5000 
+
+    for(int i=0;i<5;i++){
+        printf("Enter value");
+        scanf("%d",&arr[i]);
+    }
+
+}
+
+arr : 20 Byte 
+i   : 4 byte 
+----------------
+24 byte * 1 Lac => 2.5 gb
+
+
+
+time  : 2HR  : 50Lac 
+space : 15GB : 50Lac 
+
+
+
+---------------------------------------------------------------------------
+
+
+Time complexity =----->
+
+notation---> 
+    1) Big O  ---> Worst Case  ---> Upper Bound   -----> O notation 
+    2) Omega  ---> Best  Case  ---> Lower Bound   -----> Ω-notation
+    3) Theta  ---> Avg   Case  ---> Tight Bound   -----> Θ-notation
+
+
+array display -> 
+
+for(int i=0;i<SIZE;i++){
+    printf("%d ",arr[i]);
+}
+
+SIZE 
+5           5 times
+10          10  times 
+100         100 times
+
+SIZE --> n 
+big  o of n
+
+O(n)
+
+
+
+----------------------------------------------------
+
+for(int i=1;i<=5;i++){
+    printf("  hi  ");
+}
+
+5 times 
+O(5) X  --> constant --> O(1)
+
+-----------------------------------------------------
+
+for(int i=1;i<=5;i++){
+    for(int j=1;j<=5;j++){
+        printf("  hi  ");
+    }
+}
+
+5*5 => 25 times 
+O(25) ==> constant ==> O(1)
+-----------------------------------------------------
+
+for(int i=1;i<=SIZE;i++){
+    for(int j=1;j<SIZE;j++){
+        printf("---");
+    }
+}
+
+
+SIZE * SIZE - 1 
+n * n 
+O(n*n)
+O(n^2)
+
+-----------------------------------------------------
+
+for(i=1;i<=SIZE;i++){
+    for(j=1;j<=i;j++){
+        printf("%d ",j);
+    }
+}
+
+SIZE * i 
+n   *  n 
+
+
+SIZE 5 
+
+i    j
+1    1
+2    12
+3    123 
+4    1234    
+5    12345 
+
+i:5 
+j:5
+
+O(n*n)
+O(n^2)
+
+
+
+-----------------------------------------------------
+
+for(i=1;i<=SIZE;i++){
+    for(j=1;j<=i*i;j++){
+        printf("hi");
+    }
+}
+
+SIZE * i*i
+n * n * n 
+O(n^3)
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
