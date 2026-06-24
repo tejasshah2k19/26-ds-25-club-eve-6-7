@@ -143,6 +143,33 @@ O(n^3)
 
 -----------------------------------------------------
 
+array : its a collection of same type of data types. 
+        it allocates memory in conniute order.
+
+        int a; //single value 
+
+        int arr[5];// 5 copies 
+        //4 byte 
+        //20 byte 
+
+        //access -> index 
+        //index : 0 
+        //index : SIZE-1 
+
+insertItem 
+removeItem
+display 
+
+arr[3] = 20 ; 
+
+
+insertItem()
+removeItem()
+display()
+
+
+
+
 
 
 
