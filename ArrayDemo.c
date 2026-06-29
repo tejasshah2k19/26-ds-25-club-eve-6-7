@@ -3,18 +3,33 @@
 
 int arr[SIZE];
 
+int linearSearch(int item)
+{
+    for (int i = 0; i < SIZE; i++)
+    {
+        if (arr[i] == item)
+        {
+            return 1; // found true
+        }
+    }
+    return 0; // false not found
+}
+
 void insertItem(int location, int data)
 {
     //
-    for(int i=SIZE-1; i>=location;i--){
-        arr[i] = arr[i-1];
+    if (linearSearch(data) == 1)
+    {
+        printf("\n%d is already present ", data);
     }
-    arr[location-1]=data; 
-    
-}
-
-void removeItem()
-{
+    else
+    {
+        for (int i = SIZE - 1; i >= location; i--)
+        {
+            arr[i] = arr[i - 1];
+        }
+        arr[location - 1] = data;
+    }
 }
 
 void display()
@@ -23,6 +38,16 @@ void display()
     {
         printf(" %d", arr[i]);
     }
+}
+
+void removeItem(int location)
+{
+    //
+    for (int i = location - 1; i < SIZE - 1; i++)
+    {
+        arr[i] = arr[i + 1];
+    }
+    arr[SIZE - 1] = 0;
 }
 
 int main()

@@ -163,10 +163,23 @@ display
 arr[3] = 20 ; 
 
 
-insertItem()
+insertItem(location,data)
 removeItem()
 display()
 
+
+-----------------------------------------------------
+searching => 
+            linear 
+            binary 
+
+Array 2.0
+    insertItem(location,data)
+    10 20 30 
+
+    insert(3,10) // 10 already 
+    duplicate will not allow 
+    
 
 
 
