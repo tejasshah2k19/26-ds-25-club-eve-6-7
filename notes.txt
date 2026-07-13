@@ -181,6 +181,113 @@ Array 2.0
     duplicate will not allow 
     
 
+-----------------------------------------------------
+STACK --> LiFo : Last In First Out 
+
+Dmart : X Y Z A B ==> Not possible 
+
+photo gallery :
+whatsapp : 
+history : call log , browser , ctrl + z   
+
+recursion => 
+expression eval => ALU => a+b*c-(d+s)
+parenthesis => valid invalid  {()(([{}]))} 
+
+
+insert  : PUSH 
+remove  : POP 
+display : display 
+
+        PEEK
+        PEEP 
+
+------------------------------------------------------------------------
+												
+												
+												
+												
+	4											
+	3											
+	2						PUSH(10)		top++	stack[top] = num		
+	1	20	top				PUSH(20)		top++	stack[top] = num		
+	0	10					PUSH(30)		top++	stack[top] = num		
+		stack										
+							display( )	30		for i=top ; i>= 0 ; i--		
+	top	-1	EMPTY					20				
+								10				
+												
+							POP( )	30		pf stack[top]		top--
+												
+							display()	20		for i=top ; i>= 0 ; i--		
+								10				
+												
+------------------------------------------------------------------------
+												
+												
+    DS 
+    primitive   non primitive 
+                linear          non linear 
+                array               tree 
+                stack               graph 
+                queue 
+                linked list 
+
+
+    complexity 
+
+    notation 
+
+
+    array 
+    stack 
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+array : collection data 
+        similiar 
+        conniute 
+        fixed 
+
+
+a[500] ; // 200 -300
+a[200] ; // 200 50 
+
+a => 10 [  10 20 30  40 50 60 70 X X X     ]
+
+a => 10+5 [  10 20 30  40 50 60 70 X X X X X X X X  ]
+
+a => 15 [  10 20 30  40 50 60 70 80 90 100 X X X X X  ]
+
+
+a => 15+7 [  10 20 30  40 50 60 70 80 90 100 X X X X X  ]
+
+a=> 22  [  10 20 30  40 50 60  X X X X X  X X X X X X X ]
+
+add -> allocate => grow 
+remove -> release => 
+
+
+ 
+java 
+
+ArrayList 
+    array -> dynamic 
+
+
+import java.util.ArrayList 
+
+
+
+
+
+
+
+
+
 
 
 
