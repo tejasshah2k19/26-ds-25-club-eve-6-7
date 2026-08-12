@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #define SIZE 5
 
 int queue[SIZE];
@@ -8,38 +10,91 @@ int rear = -1;
 
 void enQueue(int data)
 {
-    rear++;
-    queue[rear] = data; 
+    if (rear == SIZE - 1)
+    {
+        printf("\nQueue Full for %d", data);
+    }
+    else
+    {
 
-    //first time 
-    if(front == -1){
-        front =0;
+        rear++;
+        queue[rear] = data;
+
+        // first time
+        if (front == -1)
+        {
+            front = 0;
+        }
     }
 }
 
 void deQueue()
 {
-    printf("\n%d removed",queue[front]);
-    front++; 
+    if (front == -1)
+    {
+        printf("\nQueue is Empty ");
+    }
+    else if (front == rear)
+    {
+        printf("\n%d removed", queue[front]);
+        front = -1;
+        rear = -1;
+    }
+    else
+    {
+        printf("\n%d removed", queue[front]);
+        front++;
+    }
 }
 
 void display()
 {
-    for(int i=front;i<=rear;i++){
-        printf(" %d ",queue[i]);
+
+    if (front == -1)
+    {
+        printf("\nQueue is Empty ");
+    }
+    else
+    {
+        printf("\nQueue data : ");
+        for (int i = front; i <= rear; i++)
+        {
+            printf(" %d ", queue[i]);
+        }
     }
 }
 
 int main()
 {
 
-    enQueue(10);
-    enQueue(20);
-    enQueue(30);
-    display();//10 20 30 
-    enQueue(40);
-    deQueue();//10 removed 
-    display();// 20 30 40 
+    int choice;
+    int data;
+
+    while (1)
+    {
+        printf("\n0 for Exit\n1 For enQueue\n2 For deQueue\n3 For Display\nEnter choice");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            printf("Enter data");
+            scanf("%d", &data);
+            enQueue(data);
+            break;
+        case 2:
+            deQueue();
+            break;
+        case 3:
+            display();
+            break;
+        case 0:
+            exit(0);
+        default:
+            printf("\nInvalid Choice");
+            break;
+        }
+    }
 
     return 0;
 }

@@ -280,9 +280,111 @@ ArrayList
 
 import java.util.ArrayList 
 
+------------------------------------------------
+
+
+leetcode 
 
 
 
+boolean findTarget(int target){
+    //array //ArrayList
+
+  for(int i=0;i<SIZE;i++){
+    for(int j=i+1;j<SIZE;j++){
+        int sum = arr[i] + arr[j]; 
+        if(sum == target){
+            return true; 
+        }
+    }
+  }         
+
+  return false;
+
+}
+
+array unsorted -> 
+nums = [2,7,11,15], target = 9 => true 
+true 
+false 
+
+
+2,7,11,15
+  i    j 
+
+O(n^2)
+----------------------------------------------------------------------------
+
+
+
+pointer --> memory address  
+
+
+variable -> store value
+pointer variable -> store memory address 
+
+
+int *p; // ? 
+int a; //tc:2 gcc:4
+
+operator --> sizeof --> byte 
+
+
+
+addition of two numbers 
+
+int a = 10
+int b = 20 
+
+int c = a+b -> a+b do not use 
+
+--------------------------------------------------------
+
+firstName  - char name[30];
+maths       int 
+sci         int 
+eng         int 
+perc        float 
+grade       char 
+
+1 student 
+5 student
+
+
+
+array ---> collection of items      --> same type of data type 
+structure ---> collection of items  --> different types of data  
+
+
+
+
+member -> dot operator , arrow operator 
+
+
+struct student {
+    char name[30];
+    int maths;
+    int sci;
+    int eng;
+    float perc; 
+    char grade; 
+}s;
+
+
+struct student s; 
+struct student p;
+
+
+printf("enter name and marks of three subjects");
+scanf("%s%d%d%d",&s.name,&s.maths,&s.sci,&s.eng);
+
+s.perc = (s.maths+s.sci+s.eng)/ 3.0; 
+
+if(s.perc >= 35){
+    s.grade ='P';
+}else{
+    s.grade = 'F'; 
+}
 
 
 
