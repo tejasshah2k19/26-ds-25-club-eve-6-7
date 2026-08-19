@@ -387,17 +387,62 @@ if(s.perc >= 35){
 }
 
 
+int a;  // 4 byte 
+char c; // 1 byte 
+int *x = &a; 
 
 
 
+main(){
+
+    //SMA -> implicit 
+    int p ;//4 byte 
+
+    //5 -> 4 byte * 5 => 20 bytes FIX   
+    int arr[5]; //10 20 30 40 50 , +5 +5 +5 -10 
+                //10 20 _ _ _  -3
+ 
 
 
 
+}//release 
 
 
+DMA -> dynamic memory allocation 
+
+p => allocate 
+arr => allocate {5}  {+5} {+7} {+3} {-10}
+
+p => release 
+ 
+how ?
+DMA -> explicit 
+
+allocate : 
+        calloc()  -> multiple block with same size : array 
+        malloc()  -> single 
+release : 
+        free()
+
+resize : 
+        realloc() 
+
+stdlib.h 
+
+which variable we used to allocate memory ? 
+pointer 
 
 
+marksheet -> single student -> DMA 
 
+char *name 
+int *maths 
+int *sci
+int *eng 
+float *perc
+char *grade 35+ P F 
+
+---------------------------------------------------
 
 
 
