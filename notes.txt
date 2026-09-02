@@ -443,14 +443,174 @@ float *perc
 char *grade 35+ P F 
 
 ---------------------------------------------------
+web dev -> 
+        level 1 
+
+        level 2 {fullstack}
+                Mongo Express React Node { js ts } 
+        level 3  { java }  ------------- AWS 
+            adv java {back end}
+            spring   {back end}
+        level 4 : java 
+            android  {frontend}
+        leve  5 : 
+                DS AI ML 
+
+---------------------------------------------------
+
+application stack -> 
+    polish notation 
+
+    1) infix notation    a+b 
+    2) prefix notation   +ab 
+    3) postfix notation  ab+ 
+
+
+    a + b  => +ab , ab+ 
+
+    infix -> prefix 
+    infix -> postfix 
+
+
+precedence 
+    ( )
+    % $ ^ 
+    / * 
+    + - 
+
+association 
+    ( ) ( ) ( )  left -> right 
+    / *          left -> right 
+    + -          left -> right 
+    % $ ^        right -> left 
+
+
+1)a + b - c 
+ab+ - c
+ab+c- 
+
+
+2) a + b * c - d / f 
+   a + bc* - d / f 
+   a + bc* - df/ 
+   abc*+ - df/ 
+   abc*+df/- 
+
+3) a + ( b + c ) * d - f 
+   a + bc+ * d - f 
+   a + bc+d* - f 
+   abc+d*+ - f 
+   abc+d*+f- 
+
+4) a + b - d +  f * g / h + c * k 
+
+    ab+d-fg*h/+ck*+
+
+1) Q + W - E $  R ^ T / Y * U $ I - O + P 
+
+
+2) a + (b * c) $ (d / e) ^ (f * g) - e $ f 
+3) q + ( w  - e ) $ ( r * t ) ^ y $ ( u + i ) * ( o / p )
 
 
 
+1) Q + W - E $  R ^ T / Y * U $ I - O + P 
+
+prefix 
+
+Q + W - E $  R ^ T / Y * U $ I - O + P 
+
+
+1) incoming data is operand then print in expression 
+2) incoming data is operator then we need to push into stack 
+    2.1) incoming operator's precedence is equal or less with stack's operator then pop stack then push 
+     
+
+   
+
+a + b  => +ab 
+
+
+a + b - c =>  
++ab - c 
+-+abc 
+
+
+a + b * c
+a + *bc 
++a*bc 
+
+
+a + b $ c * d ^ f 
+a + $bc * ^df 
+a + *$bc^df 
++a*$bc^df 
 
 
 
+stack 
+
+a + b  => ab+ 
 
 
+input           stack           o/p -> string -> postfix expression 
+a                               a
++               +               a
+b               +               ab
+                                ab+   
+
+
+
+a +  b - d 
+
+input           stack           o/p -> string -> postfix expression 
+a                               a
++               +               a
+b               +               ab
+-               -               ab+ 
+d               -               ab+d
+                                ab+d-
+
+
+a + b * c  
+
+input           stack           o/p -> string -> postfix expression 
+a                               a
++               +               a
+b               +               ab
+*               +*              ab
+c               +*              abc
+                                abc*+ 
+
+
+
+a * b + c * d - f 
+
+
+---------------------------------------------------------------------------
+
+
+linked list -> 
+        dynamic list -> 
+                    size fix 
+
+                    allocate 
+                    release 
+
+        100          200          150            600
+        [10|200]    [20|150]      [30|600]       [40 | NULL] 
+
+        node 
+    data | *next 
+
+
+struct node{
+    int data; 
+    struct node  *next;
+};
+
+
+    head | first | start 
 
 
 
