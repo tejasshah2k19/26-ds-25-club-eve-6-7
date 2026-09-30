@@ -612,6 +612,229 @@ struct node{
 
     head | first | start 
 
+    last | end | tail 
+    
+
+
+----------------------------------------------
+  
+
+struct node {
+    int data; 
+    struct node *next;
+};
+
+head => 
+last => 
+
+first node ? 
+if ( head == NULL )
+
+
+10 20 30 40 
+
+display 
+    p = head 
+
+    while ( p != NULL ){
+        printf(" %d ",p->data);
+        p = p->next; 
+    }
+
+========================================
+
+[  data | next  ]   [ ]
+ node 
+
+
+1)  single linked list 
+    [] -> [] -> [] ->[]->X 
+
+2) double linked list 
+    []<->[]<->[]<->[]->X
+ 
+3) circular linked list 
+    single 
+    double 
+
+
+
+struct node {
+    int data; 
+    struct node *next;
+    struct node *prev;
+};
+
+
+
+
+
+/*
+    take 7 numbers from user and add into linked list 
+    1) print all 1 by 1 
+    2) find out max from linked list 
+    3) find out sum of all elements from linked list 
+    4) list palindrome ? 
+        list    10 20 30
+        revList 30 20 10 
+        not palindrome 
+        
+        list 10 20 30 20 10 
+        rev 10 20 30 20 10
+        palindrome 
+   
+        
+    5) Enter the n value from user and remove that nth item from the end 
+        10 20 30 40 50 60 70  
+        n = 2  // remove 2nd last item 
+        10 20 30 40 50  70  
+
+ */
+
+
+Linear DS 
+        Array 
+        Stack LIFO  
+        Queue FIFO 
+
+Linked List 
+
+        [200 100 10 20 30 40 50 60 ]
+        addLast()  end
+        addFirst() beg 
+        add(1,700) index 
+
+        removeLast() 60   last 
+        removeBeg()  200  beg
+        remove(0)    200  index 
+
+
+
+        LinkeList -> stack 
+        LinkedList -> array 
+        LinkedList -> queue 
+
+
+        java.util 
+
+  
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
+https://leetcode.com/problems/middle-of-the-linked-list/
+
+https://leetcode.com/problems/reverse-linked-list/
+
+https://leetcode.com/problems/rotate-list/
+
+6
+https://leetcode.com/problems/palindrome-linked-list/
+
+7
+https://leetcode.com/problems/linked-list-cycle/
+
+8
+https://leetcode.com/problems/remove-linked-list-elements/
+
+9
+https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/
+
+10
+https://leetcode.com/problems/swapping-nodes-in-a-linked-list/        
+
+
+
+Non Linear -> 
+    Tree 
+    Graph 
+
+Tree -> H 
+
+Binary Tree 
+    MAX 2 sub node / child 
+
+
+total node :
+root node : 
+parent of 4: 
+child of 7 :
+leaf node : 
+sibling : 
+height : 
+level : 
+
+
+BST : Binary Search Tree 
+
+1) i am a binary tree : MAX 2 
+2) child > parent -> right 
+3) child < parent -> left 
+
+90  60  30  20  35  70  50
+
+
+
+50  90  40  30  55  100 85  60  10
+
+--------------------------------------------------------
+
+Linear DS  : 
+
+10 20 30 40 50 
+
+Non Linear DS :
+        TREE 
+        GRAPH 
+
+        tree : H 
+
+Binary Tree :  MAX 2 Child [ 0 1 2 ] 
+
+BST : 
+    1) max 2 child [ 0 1 2 ] 
+    2) Child > Parent : Right 
+    3) Child < Parent : Left 
+
+50  90  40  30  55  100 85  60  10
+-----------------------------------------------------------------------------
+
+Tree Travesal : travel : 
+
+    1) In Order     :   Left - Root  - Right 
+    2) Pre Order    :   Root - Left  - Right 
+    3) Post Order   :   Left - Right - Root 
+
+----------------------------------------------------------------------------
+
+BST : delete 
+
+1) 0 child 
+2) 1 child  
+3) 2 child -- { inOrder successor- smallest , inOrder predecessor -largest }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+80  60  120 55  90  35  110   130   45 
+
+
+q1-BST -> tree 
+            
+
+q2-insert(99) -> tree 
+
+            
+q3-
+PreOrder -> X X X X X X X 
+PostOrder ->  X X X X X x   
+
+q-4
+delete(90) 
+delete(110) -> tree 
+
+       
+q-5
+PreOrder -> X X X X 
+ 
+
+---------------------------------------------------------------------------------------------------
 
 
 
@@ -626,8 +849,46 @@ struct node{
 
 
 
+Ans 1: 
+             80
+           /    \
+         60      120
+        /       /   \
+      55       90    130
+     /           \
+   35             110
+     \
+      45 
 
+Ans 2: 
+             80
+           /    \
+         60      120
+        /       /   \
+      55       90    130
+     /           \
+   35             110
+     \           /   
+      45        99
 
+Ans 3.
 
+PreOrder -> 80 60 55 35 45 120 90 110 99 130  
+PostOrder -> 45 35 55 60 99 110 90 130 120 80  
 
+Ans 4. 
 
+                 80
+			   /  \
+		      60  120
+			 /    / \
+	       	55   99 130
+			/    
+    		35    
+			\     
+			45   
+
+Ans 5. 
+     80 60 55 35 45 120 99 130
+
+-----------------------------------------------------------------------------------------------------
