@@ -892,3 +892,23 @@ Ans 5.
      80 60 55 35 45 120 99 130
 
 -----------------------------------------------------------------------------------------------------
+
+
+AVL Tree -> 
+
+1) BST {max : 2 child , child < parent : left child > parent : right }
+2) Balance Factor of node must be -1 0 1 
+
+
+imbalance --> rotate  
+
+
+BF|node| = LH[node] - RH[node]   -1 0 1
+height -> height Balance tree 
+
+imbalance
+1) RR imbalance { right right imbalance }  -----> rotate ----> left rotate 
+2)
+3)
+4)
+
